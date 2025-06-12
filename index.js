@@ -59,7 +59,7 @@ tryConnect()
     const [res] = await pool.query('SELECT CURRENT_USER() AS mysql_user');
     console.log(`🧠 Conectado como MySQL user: ${res[0].mysql_user}`);
 
-    app.listen(process.env.PORT || 37880, () => {
+    app.listen(process.env.PORT || 3000, () => {
       console.log(`✅ Servidor iniciado na porta ${process.env.PORT}`);
     });
   })
