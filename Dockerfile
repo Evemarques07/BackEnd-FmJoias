@@ -28,7 +28,7 @@ COPY . .
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 
 # Expõe a porta 37880 (do Nginx)
-EXPOSE 37880
+EXPOSE 80
 
 # Inicia Node.js e Nginx juntos
 CMD ["sh", "-c", "service nginx start && npm start"]

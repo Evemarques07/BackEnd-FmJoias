@@ -25,7 +25,7 @@ services:
       mysql:
         condition: service_healthy
     ports:
-      - "37880:37880"
+      - "37880:80"
     env_file:
       - ./.env
     working_dir: /app
